@@ -338,7 +338,7 @@ const MainContent = () => {
                 const [ledsResponse, adsResponse, scheduleDataResponse] = await Promise.all([
                     axios.get('http://ec2-3-25-87-165.ap-southeast-2.compute.amazonaws.com:3000/led'),
                     axios.get('http://ec2-3-25-87-165.ap-southeast-2.compute.amazonaws.com:3000/ad'),
-                    axios.get('http://ec2-3-25-87-165.ap-southeast-2.compute.amazonaws.com:3000/ad'),
+                    axios.get('http://ec2-3-25-87-165.ap-southeast-2.compute.amazonaws.com:3000/schedule'),
                 ]);
     
                 const leds = ledsResponse.data;
